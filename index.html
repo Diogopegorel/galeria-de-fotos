@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleleapis.com/css2?family=roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Galeria de fotos</h1>
+        <button type="button">Nova imagem +</button>
+    </header>
+    <form>
+        <h2>Inserir nova imagem</h2>
+        <input type="url" id="new-image-addres" required placeholder="URL da imagem">
+        <button type="submit">Adicionar</button>
+        <button type="reset" id="cancel">Cancelar</button>
+    </form>
+    <ul>
+        <li>
+            <img src="img/foto1.jpg" alt="pintura de um gato"/>
+            <div class="overlay-img-link" >
+                <a href="img/foto1.jpg" target="blank">Ver imagem em tamanho real</a>
+            </div class="overlay-img-link">
+        </li>
+        <li>
+            <img src="img/foto2.jpg" alt="Flamingo"/>
+            <div class="overlay-img-link">
+                <a href="img/foto2.jpg" target="blank">Ver imagem em tamanho real</a>
+            </div>
+        </li>
+        <li>
+            <img src="img/foto3.jpg" alt="cãezinhos"/>
+            <div class="overlay-img-link">
+                <a href="img/foto3.jpg" target="blank">Ver imagem em tamanho real</a>
+            </div>
+        </li>
+    </ul>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
